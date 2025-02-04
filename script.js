@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d");
-  canvas.width = 500;
-  canvas.height = 800;
+  canvas.width = 800;
+  canvas.height = 500;
 
   class Game {
     constructor(ctx, width, height) {
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.spriteHeight = 175;
       this.width = this.spriteWidth / 2;
       this.height = this.spriteHeight / 2;
-      this.x = Math.random() * this.game.width;
+      this.x = Math.random() * this.game.width - this.spriteWidth / 4;
       this.y = 0 - this.height;
       this.image = spider;
       this.vx = 0;
